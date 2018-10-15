@@ -7,7 +7,7 @@ class TodoList extends Component {
   constructor(props) {
     super(props);
 
-    this.state ={
+    this.state = {
       items: []
     };
 
@@ -48,9 +48,9 @@ class TodoList extends Component {
           <div className="header">
               <form onSubmit={this.addItem}>
                   <input ref={(a) => this._inputElement = a}
-                      placeholder="enter task">
+                      placeholder="shit that needs doing">
                   </input>
-                  <button type="submit">add</button>
+                  <button type="submit">add that shit!</button>
               </form>
               <TodoItems entries={this.state.items}
                         delete={this.deleteItem}/>
